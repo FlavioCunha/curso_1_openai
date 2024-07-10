@@ -3,6 +3,18 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-cliente = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+cliente = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) # Instanciando a classe OpenAI utilizando a Secret Key do arquivo .env
 
-# Comentário
+resposta = cliente.chat.completions.create(
+    messages=[
+        {"role": "system",
+         "content": "Listar apenas o nome do produto sem descrição"
+        },
+        {"role": "user",
+         "content": "Liste 3 produtos sustentáveis"
+        }
+     ],
+    model="gpt-4"
+)
+
+print(resposta.choices[0].message.content) # Exibindo a resposta da API
