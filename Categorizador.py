@@ -15,7 +15,6 @@ def categoriza_produto(nome_produto, lista_categorias_possiveis):
     # Lista de Categorias Válidas
     {lista_categorias_possiveis.split(",")}
 
-
     # Formato da Saída
     Produto: Nome do Produto
     Categoria: Apresentar a categoria do produto
@@ -42,6 +41,9 @@ categorias_validas = "Moda Sustentável, Produtos para o Lar, Beleza Natural, El
 
 while True:
     nome_produto = input("Digite o nome do produto: ")
+    if nome_produto == "sair":
+        print("Até breve...")
+        break
     texto_resposta = categoriza_produto(nome_produto, categorias_validas)
     print(texto_resposta)
 
