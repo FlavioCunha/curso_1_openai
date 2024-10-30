@@ -29,12 +29,15 @@ cliente - descreva o perfil do cliente em 3 palavras
 prompt_usuario = carrega("dados\lista_de_compras_100_clientes.csv")
 
 lista_de_tokens = codificador.encode(prompt_sistema + prompt_usuario)
+# print(f"Lista de Tokens: {lista_de_tokens}")
+
 numero_de_tokens = len(lista_de_tokens)
 print(f"Número de tokens na entrada: {numero_de_tokens}")
 tamanho_esperado_saida = 2048
 
 if numero_de_tokens >= 4096 - tamanho_esperado_saida:
     modelo = "gpt-4-1106-preview"
+    # modelo = "gpt-4"
 
 print(f"Modelo escolhido: {modelo}")
 
