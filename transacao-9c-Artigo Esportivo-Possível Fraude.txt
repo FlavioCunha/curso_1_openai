@@ -1,0 +1,6 @@
+Recomendação: 
+1. Notificar Cliente: De acordo com o status "Possível Fraude", é aconselhável informar o cliente sobre a situação atual e quaisquer detalhes relevantes para verificar se o cliente reconhece a transação em questão. 
+2. Acionar setor Anti-Fraude: O parecer sugere que a compra foi efetuada num estabelecimento ou localização considerada de alto risco para fraudes. Nesse caso, deve ser acionado o setor Anti-Fraude, para que se possa proceder com a investigação detalhada e tomar as medidas apropriadas. 
+3. Realizar Verificação Manual: Como a transação foi marcada devido à detecção de alguma inconsistência, recomenda-se tomar medidas para uma verificação manual. Esta é uma etapa crucial para confirmar a suspeita de fraude. 
+
+Classificação de Fraude: Gasto Suspeito/Incomum - Esta classificação é aplicada baseada no parecer que indica que a transação pode ter sido marcada como possível fraude devido a um gasto suspeito ou atípico, bem acima do que o titular do cartão normalmente gasta, ou pode ser devido a padrões de compra incomuns. Além disso, a transação foi realizada em um local considerado de alto risco para fraudes.
