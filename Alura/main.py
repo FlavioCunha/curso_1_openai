@@ -8,7 +8,8 @@ cliente = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) # Corrigido para usar Open
 resposta = cliente.chat.completions.create(
     messages=[
         {"role": "system", "content": "Listar apenas o nome do produto sem descrição"},
-        {"role": "user", "content": "Liste 3 produtos sustentáveis"}
+
+        {"role": "user", "content": "Liste 4 produtos sustentáveis"}
     ],
     model="gpt-4"
 )

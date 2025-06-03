@@ -36,7 +36,7 @@ print(f"Número de tokens na entrada: {numero_de_tokens}")
 tamanho_esperado_saida = 2048
 
 if numero_de_tokens >= 4096 - tamanho_esperado_saida:
-    modelo = "gpt-4-1106-preview"
+    modelo = "gpt-4-turbo"
     # modelo = "gpt-4"
 
 print(f"Modelo escolhido: {modelo}")
