@@ -1,5 +1,5 @@
 from openai import OpenAI
-from dotenv import load_dotenv
+from dotenv import load_dotenv # pacote
 import os
 
 load_dotenv()
