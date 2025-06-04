@@ -33,17 +33,17 @@ def salva(nome_do_arquivo, conteudo):
 def analisador_sentimentos(produto):
     prompt_sistema = f"""
         Você é um analisador de sentimentos de avaliações de produtos.
-        Escreva um parágrafo com até 50 palavras resumindo as avaliações e 
+        Escreva um parágrafo com até 100 palavras resumindo as avaliações e 
         depois atribua qual o sentimento geral para o produto.
-        Identifique também 3 pontos fortes e 3 pontos fracos identificados a partir das avaliações.
+        Identifique também 2 pontos fortes e 2 pontos fracos identificados a partir das avaliações.
 
         # Formato de Saída
 
         Nome do Produto:
         Resumo das Avaliações:
         Sentimento Geral: [utilize aqui apenas Positivo, Negativo ou Neutro]
-        Ponto fortes: lista com três bullets
-        Pontos fracos: lista com três bullets
+        Ponto fortes: lista com dois bullets
+        Pontos fracos: lista com dois bullets
     """
     prompt_usuario = carrega(f"./dados/avaliacoes-{produto}.txt")
     print(f"Iniciou a análise de sentimentos do produto {produto} - {data_hora_formatada}")
@@ -76,7 +76,7 @@ def analisador_sentimentos(produto):
     salva(f"./dados/analise-{produto}.txt", texto_resposta)
     print(f"Finalizou a análise de sentimentos do produto {produto} - {data_hora_formatada}")
 
-lista_de_produtos = ["Camisetas de algodão orgânico", "Jeans feitos com materiais reciclados", "Maquiagem mineral"]
+lista_de_produtos = ["Camisetas de algodão orgânico", "Jeans feitos com materiais reciclados"]
 
 for um_produto in lista_de_produtos:
     analisador_sentimentos(um_produto)
