@@ -28,5 +28,5 @@ audio_response = client.audio.speech.create(
 )
 
 # 3. Salve o áudio retornado
-with open("dog.wav", "wb") as f:
+with open("./dados/dog.wav", "wb") as f:
     f.write(audio_response.content)

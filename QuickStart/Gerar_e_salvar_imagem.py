@@ -20,5 +20,5 @@ image_url = response.data[0].url
 img_data = requests.get(image_url).content
 
 # salvar a imagem em um arquivo
-with open("cat_and_otter.png", "wb") as handler:
+with open("./dados/cat_and_otter.png", "wb") as handler:
     handler.write(img_data)
