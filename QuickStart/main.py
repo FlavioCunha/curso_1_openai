@@ -1,7 +1,7 @@
-# Exemplo prático em Python usando FastAPI para criar a API e o pymongo para inserir no MongoDB. O fluxo será:
-# Usuário informa os dados da venda (produto, preço, quantidade) via uma requisição para a API.
-# A API recebe os dados e salva no MongoDB.
-# Instalação dos pacotes necessários: pip install fastapi[all] pymongo
+# Exemplo prático em Python usando FastAPI para criar a API e o pymongo para inserir no MongoDB.
+# O fluxo será: Usuário informa os dados da venda (id, produto, preço, quantidade) via requisição para a API.
+# A API recebe os dados e executa no MongoDB.
+# Instalação dos pacotes necessários: pip install fastapi[all] pymongo.
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
